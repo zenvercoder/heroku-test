@@ -3,30 +3,12 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
-});
-
-module.exports = router;
-
-
-
-var express = require('express');
-var router = express.Router();
-
-/* GET home page. */
-router.get('/', function(req, res, next) {
 // renders html
   res.render('index', {
-    title: 'Awesome Pet Page',
-    pet1: 'dog',
-    pet2: 'cat'
+    title: 'Awesome Pet Page'
+    //pet1: 'dog',
+    //pet2: 'cat'
   });
-});
-
-router.get('/:', function(req, res, next){
-  res.render('dog1', {
-
-  })
 });
 
 module.exports = router;

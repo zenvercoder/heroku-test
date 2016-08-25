@@ -61,10 +61,10 @@ app.use(function(err, req, res, next) {
   });
 });
 
-const port = process.env.PORT;
+//const port = process.env.PORT;
 
-app.listen(Number(port), () => {
-  console.log("server running on port: ", port)
-});
+//app.listen(Number(port), () => {
+//  console.log("server running on port: ", port)
+//});
 
 module.exports = app;
