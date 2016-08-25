@@ -1,3 +1,7 @@
+// es5 cares about this. express generator uses all ES files
+// if you want to use ES2015
+"use strict";
+
 var dotenv = require('dotenv').config();
 var express = require('express');
 var path = require('path');
