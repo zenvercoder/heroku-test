@@ -5,13 +5,34 @@ var router = express.Router();
 router.get('/', function(req, res, next) {
 // renders html
   res.render('index', {
-    title: 'Awesome Pet Page'
+    title: 'Awesome Pet Page',
+    pet1: 'dog'
+  });
+  next();
+});
+
+router.get('/dog', function(req, res, next) {
+  var num = Math.floor((Math.random()*7) + 1);
+  res.render('dog', {
+  srcdog: "/images/dog"+num+".gif"
+    //title: 'Awesome Pet Page',
     //pet1: 'dog',
     //pet2: 'cat'
   });
+  next();
 });
+//
+//router.get('/kitten', function(req, res, next) {
+//// renders html
+//  res.render('index', {
+//    title: 'Awesome Pet Page',
+//    pet1: 'dog',
+//    pet2: 'cat'
+//  });
+//});
 
 module.exports = router;
+
 
 
 
