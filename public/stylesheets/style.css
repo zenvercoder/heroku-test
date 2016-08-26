@@ -2,7 +2,38 @@ body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
+.container {
+  width: 95%;
+  padding: 10px;
+}
+
+h1 {
+  margin: auto;
+}
+
+p {
+  margin: auto;
+}
 
 a {
   color: #00B7FF;
+  text-decoration: none;
+}
+
+
+.mdl-card__title {
+  background-color: #C5CAE9;
+  /*color: white;*/
+}
+
+.mdl-card {
+  min-height: 150px;
+  min-width: 475px;
+}
+
+img {
+  height: 350px;
+  min-width: 475px;
+  margin: auto;
+  border: 1px solid blue;
 }
